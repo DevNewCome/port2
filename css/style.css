@@ -58,7 +58,7 @@
   color: #FFF !important;
 }
 .dark .projects {
-  border: 2px solid #6E07F3 !important;
+  border: 4px solid #6E07F3 !important;
 }
 .dark footer {
   color: #FFF !important;
@@ -99,19 +99,20 @@ a {
   width: 100%;
   z-index: 10;
 }
-.menu-nav button {
+.menu-nav #theme {
+  font-size: 18px;
   margin: 10px;
-  width: 140px;
+  width: 160px;
   border-radius: 20px;
   border: none;
-  padding: 0.6rem;
+  padding: 0.8rem;
   background-color: #6E07F3;
   color: #FFF;
   font-weight: bold;
   cursor: pointer;
   margin-top: 1rem;
 }
-.menu-nav button:hover {
+.menu-nav #theme:hover {
   transition: 0.5s;
   background-color: #111419;
   color: #FFF;
@@ -128,7 +129,7 @@ a {
   list-style: none;
   text-decoration: none;
   font-size: 1.3rem;
-  padding: 4px;
+  padding: 8px;
   width: 140px;
   cursor: pointer;
 }
@@ -141,7 +142,7 @@ a {
 }
 .menu-nav .links {
   color: #6E07F3;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
 }
 .menu-nav .links:hover {
@@ -152,6 +153,7 @@ a {
 .banner {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -166,24 +168,22 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
-  height: 100%;
   gap: 1rem;
 }
 .banner .banner-txt .web {
-  font-size: 55px;
+  font-size: 65px;
   color: #31343C;
 }
 .banner .banner-txt .comun {
   color: #B28756;
-  font-size: 25px;
+  font-size: 30px;
 }
 .banner .banner-txt button {
   margin: 10px;
   width: 140px;
   border-radius: 20px;
   border: none;
-  padding: 0.6rem;
+  padding: 8px;
   background-color: #B28756;
   font-weight: bold;
   text-transform: uppercase;
@@ -198,6 +198,8 @@ a {
   border: 2px solid #6E07F3;
   background: none;
   color: #111419;
+  font-size: 18px;
+  padding: 8px;
 }
 .banner .content-btn .banner-button:hover {
   transition: 0.5s;
@@ -209,6 +211,8 @@ a {
   background: none;
   text-decoration: none; /* Adicionando esta linha para remover o sublinhado padrão */
   color: #111419;
+  font-size: 18px;
+  padding: 8px;
 }
 .banner .content-btn .btnCurriculo:hover {
   background-color: #6E07F3;
@@ -225,9 +229,9 @@ a {
 .banner .contato-icon {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
   margin: 0 auto;
-  gap: 3rem;
+  gap: 4rem;
+  margin-top: 3rem;
 }
 .banner .contato-icon .img-contato {
   cursor: pointer;
@@ -236,16 +240,26 @@ a {
 }
 .banner .contato-icon .img-git {
   cursor: pointer;
-  width: 85px;
-  height: 82px;
+  width: 80px;
+  height: 75px;
+}
+.banner .contato-icon .img-contato:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.banner .contato-icon .img-git:hover {
+  scale: 1.2;
+  transition: all 0.5s;
 }
 
 .sobre-mim {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #FFF;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 10px;
   margin: 20px 20px;
 }
@@ -255,9 +269,10 @@ a {
   text-align: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 3rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 25px;
   color: #111419;
 }
 .sobre-mim #content {
@@ -272,27 +287,29 @@ a {
 .sobre-mim #content .text-left {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 1.8rem;
+  max-width: 800px;
   color: #FFF;
-  line-height: 35px;
   border: 2px solid #6E07F3;
   border-radius: 15px;
   padding: 20px;
   background-color: #6E07F3;
   box-shadow: 5px 5px 20px #6E07F3;
 }
+.sobre-mim #content .text-left .text-left, .sobre-mim #content .text-left p {
+  word-wrap: break-word;
+  font-size: 22px;
+  line-height: 50px;
+}
 .sobre-mim #content .text-left button {
   width: 140px;
   border-radius: 20px;
   border: none;
-  padding: 0.6rem;
+  padding: 1rem;
   background-color: #B28756;
   margin-top: 3rem;
   cursor: pointer;
   color: #FFF;
+  font-size: 18px;
 }
 .sobre-mim #content .div-foto {
   display: flex;
@@ -310,10 +327,13 @@ a {
 #habilidades {
   background-color: #FFF;
   margin-top: 2rem;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   gap: 20px;
-  padding: 30px;
   border-radius: 10px;
   margin: 20px 20px;
 }
@@ -336,6 +356,7 @@ a {
   align-items: center;
   text-transform: uppercase;
   color: #FFF;
+  font-size: 32px;
   margin-left: 4rem;
   text-transform: uppercase;
   margin-top: 14px;
@@ -363,7 +384,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
   margin: 0 auto;
   border: 3px solid rgb(56, 56, 213);
   border-radius: 10px;
@@ -376,6 +397,7 @@ a {
   justify-content: center;
   text-transform: uppercase;
   color: #fff;
+  font-size: 32px;
 }
 #habilidades .soft-skills .container-soft {
   width: 100%;
@@ -389,23 +411,27 @@ a {
   list-style: none;
   padding: 5px;
   font-weight: 700;
+  font-size: 22px;
 }
 
 #content-projects {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: #FFF;
   border-radius: 10px;
-  padding: 2rem;
   margin: 20px 20px;
+}
+#content-projects .title {
+  margin-top: 1.8rem;
+  font-size: 38px;
 }
 #content-projects .projectsPai {
   display: flex;
@@ -415,11 +441,12 @@ a {
 #content-projects .projectsPai .btn-preview {
   border-radius: 20px;
   padding: 6px;
-  width: 100px;
+  width: 150px;
   cursor: pointer;
   border: 2px solid #6E07F3;
   background: none;
   margin-top: 10px;
+  font-size: 22px;
 }
 #content-projects .projectsPai .btn-preview:hover {
   transition: 0.5s;
@@ -432,14 +459,16 @@ a {
   color: #fff;
 }
 #content-projects .projectsPai .projects {
-  background-repeat: none;
-  opacity: 0.9;
-  background-size: 100% 100%;
-  position: relative;
-  border: 2px solid rgb(120, 120, 121);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex: 1;
+  border: 4px solid #6E07F3;
   padding: 3rem;
-  width: 250px;
-  height: 250px;
+  max-width: 320px;
+  min-height: 280px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -447,7 +476,7 @@ a {
   color: black;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 25px;
   text-decoration: underline;
 }
 #content-projects .projectsPai .projects .projects-description {
@@ -455,34 +484,53 @@ a {
   flex-wrap: wrap;
   color: black;
   margin-top: 2.5rem;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 40px;
 }
 #content-projects .projectsPai .projects .git-icon {
-  position: absolute;
+  /*position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
+  transform: translateX(-50%);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
   border-radius: 50% solid black;
   height: 50px;
   width: 50px;
 }
+#content-projects .projectsPai .projects .git-icon .git-icon-img:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
 #content-projects .projectsPai .projects .git-icon .git-icon-img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  margin: 0 auto;
+  min-height: 120px;
   background-color: #282A36;
   color: #FFF;
+  width: 100%;
+  border-radius: 2px solid blue;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 footer p {
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
+  align-items: center;
+  font-size: 20px;
 }
 
 @media (max-width: 1050px) {
@@ -494,15 +542,14 @@ footer p {
 }
 @media (max-width: 750px) {
   .ulMenu {
-    display: flex;
-    flex-direction: column;
+    display: none !important;
   }
 }
 @media (max-width: 920px) {
   .menu-nav {
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 120px;
   }
 }
 @media (max-width: 920px) {
@@ -577,6 +624,14 @@ footer p {
   .git-icon {
     display: none;
   }
+}
+@media (max-width: 1215px) {
+  /* .projects{
+       display: flex;
+       flex-direction: column;
+       flex: 1;
+       flex-wrap: wrap;
+   }*/
 }
 
 /*# sourceMappingURL=style.css.map */
