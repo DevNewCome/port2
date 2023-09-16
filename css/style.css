@@ -437,6 +437,7 @@ a {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1600px;
 }
 #content-projects .projectsPai .btn-preview {
   border-radius: 20px;
@@ -464,7 +465,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  flex: 1;
   border: 4px solid #6E07F3;
   padding: 3rem;
   max-width: 320px;
