@@ -318,14 +318,15 @@ a {
   margin: 20px 20px;
 }
 #habilidades #skills {
-  width: 1180px;
+  max-width: 1280px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   border: 3px solid rgb(56, 56, 213);
   border-radius: 10px;
-  height: 120px;
+  min-height: 150px;
   background-color: #6E07F3;
   box-shadow: 5px 5px 20px #6E07F3;
 }
@@ -337,6 +338,8 @@ a {
   color: #FFF;
   margin-left: 4rem;
   text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 #habilidades #skills .skills-content {
   width: 100%;
@@ -355,11 +358,12 @@ a {
   margin-left: 20px;
 }
 #habilidades .soft-skills {
-  width: 1190px;
+  max-width: 1280px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 120px;
+  height: 150px;
   margin: 0 auto;
   border: 3px solid rgb(56, 56, 213);
   border-radius: 10px;
@@ -481,16 +485,30 @@ footer p {
   text-transform: uppercase;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1050px) {
   .foto {
-    width: 100px !important;
-    height: 100px !important;
+    display: none;
+    /* width: 100px !important;
+     height: 100px !important;*/
+  }
+}
+@media (max-width: 750px) {
+  .ulMenu {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 920px) {
   .menu-nav {
     display: flex;
     flex-direction: column;
+    height: 250px;
+  }
+}
+@media (max-width: 920px) {
+  .content {
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
 @media (max-width: 920px) {
