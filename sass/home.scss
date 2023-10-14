@@ -447,6 +447,12 @@ margin: 20px 20px;
                 height: 80px;
                 margin-left: 20px;
             }
+
+            .icon:hover{
+                transform: scale(1.2);
+                cursor: pointer;
+                transition: all 0.2s;
+            }
         }
     } //HARD SKILLS
     
