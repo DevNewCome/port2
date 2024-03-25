@@ -475,7 +475,7 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 #content-projects .projectsPai .projects .right {
-  display: block;
+  
 }
 #content-projects .projectsPai .projects .right, #content-projects .projectsPai .projects img {
   object-fit: cover;
