@@ -344,7 +344,6 @@ a {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  border: 3px solid rgb(56, 56, 213);
   border-radius: 10px;
   min-height: 150px;
   background-color: #6E07F3;
@@ -391,7 +390,6 @@ a {
   align-items: center;
   min-height: 150px;
   margin: 0 auto;
-  border: 3px solid rgb(56, 56, 213);
   border-radius: 10px;
   box-shadow: 5px 5px 20px #6E07F3;
   background-color: #6E07F3;
@@ -466,16 +464,23 @@ a {
 }
 #content-projects .projectsPai .projects {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  border: 4px solid #6E07F3;
+  border: 4px solid #dbd7e1;
   padding: 3rem;
-  max-width: 320px;
+  width: 50%;
   min-height: 280px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#content-projects .projectsPai .projects .right {
+  display: block;
+}
+#content-projects .projectsPai .projects .right, #content-projects .projectsPai .projects img {
+  object-fit: cover;
+  width: 250px;
+  height: 100%;
 }
 #content-projects .projectsPai .projects .projects-title {
   color: black;
@@ -491,6 +496,10 @@ a {
   margin-top: 2.5rem;
   font-size: 22px;
   line-height: 40px;
+}
+#content-projects .projectsPai .projects .projeto-buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
 #content-projects .projectsPai .projects .git-icon {
   /*position: absolute;
@@ -555,6 +564,14 @@ footer p {
     display: flex;
     flex-direction: column;
     height: 120px;
+  }
+  .right {
+    display: none !important;
+  }
+  .projeto-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 920px) {
